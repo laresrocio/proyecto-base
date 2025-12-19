@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--primary-font);
 }
 
 :root {
@@ -15,4 +16,6 @@
     --blue-300: #2A9D8F;
     --blue-200: #287271;
     --blue-100: #264653;
+
+    --primary-font: "Roboto", sans-serif;
 }
