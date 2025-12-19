@@ -30,6 +30,7 @@ body {
     display: grid;
     grid-template-columns: 320px 1fr;
     height: 100vh;
+    border-radius: 30px;
 }
 
 /*aside styles*/
@@ -203,8 +204,6 @@ aside header {
 }
 
 
-
-
 /*footer de ventana de chat*/
 
  footer {
@@ -270,4 +269,16 @@ aside header {
  footer .btn-send:hover {
     background-color: var(--orange-400);
     transform: scale(0.95);
+ }
+
+
+ /*responsive design*/
+
+ @media (max-width:880px){
+    .app {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        display: none;
+    }
  }
