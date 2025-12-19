@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --orange-500: #E76F51;
+    --orange-400: #EE8959;
+    --orange-300: #F4A261;
+    --orange-200: #EFB366;
+    --orange-100: #E9C46A;
+    --green-200: #BABB74;
+    --green-100: #8AB17D;
+    --blue-300: #2A9D8F;
+    --blue-200: #287271;
+    --blue-100: #264653;
+}
