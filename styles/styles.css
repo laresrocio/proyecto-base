@@ -9,7 +9,7 @@
     --orange-500: #E76F51;
     --orange-400: #EE8959;
     --orange-300: #F4A261;
-    --orange-200: #EFB366;
+    --orange-200: #ffe5c2;
     --orange-100: #f8f1df;
     --green-200: #BABB74;
     --green-100: #8AB17D;
@@ -26,7 +26,7 @@ body {
 }
 
 .app {
-    background-color: var(--orange-200);
+    background-color: var(--orange-300);
     display: grid;
     grid-template-columns: 320px 1fr;
     height: 100vh;
@@ -141,5 +141,26 @@ aside header {
   background-color: var(--blue-300);
   cursor: pointer;
   border-left: 3px solid var(--orange-400);
+}
+
+
+/* panel de chat */ 
+
+.chat-header {
+    background-color: var(--orange-200);
+    border-bottom: 1px solid var(--orange-300);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    color: var(--blue-100)
+}
+.chat-header img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.chat-header p {
+  color: var(--blue-200);
 }
 
