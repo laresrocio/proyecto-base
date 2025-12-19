@@ -26,11 +26,15 @@ body {
 }
 
 .app {
-    background-color: var(--orange-300);
+    background-color: var(--orange-100);
     display: grid;
     grid-template-columns: 320px 1fr;
     height: 100vh;
     border-radius: 30px;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.281);
 }
 
 /*aside styles*/
