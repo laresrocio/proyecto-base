@@ -10,7 +10,7 @@
     --orange-400: #EE8959;
     --orange-300: #F4A261;
     --orange-200: #EFB366;
-    --orange-100: #E9C46A;
+    --orange-100: #f8f1df;
     --green-200: #BABB74;
     --green-100: #8AB17D;
     --blue-300: #2A9D8F;
@@ -19,3 +19,73 @@
 
     --primary-font: "Roboto", sans-serif;
 }
+
+body {
+    background-color: var(--orange-500);
+    padding: 40px;
+}
+
+.app {
+    background-color: var(--orange-200);
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    height: 100vh;
+}
+
+/*aside styles*/
+
+aside {
+    background-color:var(--blue-100);
+    color: var(--orange-100);
+}
+
+aside header {
+    background-color: var(--blue-200);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile h2 {
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.menu button {
+    padding: 7px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: var(--blue-200);
+    color: var(--orange-100);
+    transition: transform .2s;
+
+}
+.menu button svg {
+    width: 20px;
+}
+
+.menu button:hover {
+    background-color: var(--blue-300);
+    transform: translateY(-4px);
+}
+
