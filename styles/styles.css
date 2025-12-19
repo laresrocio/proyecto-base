@@ -6,16 +6,16 @@
 }
 
 :root {
-    --orange-500: #E76F51;
-    --orange-400: #EE8959;
-    --orange-300: #F4A261;
-    --orange-200: #ffe5c2;
-    --orange-100: #f8f1df;
-    --green-200: #BABB74;
-    --green-100: #8AB17D;
-    --blue-300: #2A9D8F;
-    --blue-200: #287271;
-    --blue-100: #264653;
+    --orange-500: #FF8A65;
+    --orange-400: #FFB74D;
+    --orange-300: #FFD166;
+    --orange-200: #FFE8B6;
+    --orange-100: #F5F5F7;
+    --white: #FFFFFF;
+    --blue-50: #B0B3C7;
+    --blue-300: #4d5792;
+    --blue-200: #3F4A8A;
+    --blue-100: #2E2A5F;
 
     --primary-font: "Roboto", sans-serif;
 }
@@ -26,10 +26,10 @@ body {
 }
 
 .app {
-    background-color: var(--orange-100);
+    background-color: var(--orange-200);
     display: grid;
     grid-template-columns: 320px 1fr;
-    height: 100vh;
+    height: 90vh;
     border-radius: 30px;
     max-width: 1100px;
     margin: auto;
@@ -40,7 +40,7 @@ body {
 /*aside styles*/
 
 aside {
-    background-color:var(--blue-100);
+    background-color:var(--blue-300);
     color: var(--orange-100);
 }
 
@@ -78,15 +78,18 @@ aside header {
 .menu button {
     padding: 7px;
     border: none;
-    border-radius: 10%;
+    border-radius: 50%;
     cursor: pointer;
     background-color: var(--blue-200);
     color: var(--orange-100);
     transition: transform .2s;
+    display: flex;
+    align-items: center;
 
 }
 .menu button svg {
-    width: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .menu button:hover {
@@ -116,11 +119,11 @@ aside header {
 }
 
 .search input::placeholder {
-  color: #91dfd6;
+  color: var(--blue-50);
   opacity: 1; 
 }
 
-/* chats styles*/
+/* menu de chats styles*/
 
 .chats {
     display: flex;
@@ -130,7 +133,7 @@ aside header {
 }
 
 .chat {
-    background-color: var(--blue-100);
+    background-color: var(--blue-300);
     display: flex;
     padding: 10px;
     align-items: center;
@@ -143,7 +146,7 @@ aside header {
 }
 
 .chat:hover {
-  background-color: var(--blue-300);
+  background-color: var(--blue-200);
   cursor: pointer;
   border-left: 3px solid var(--orange-400);
 }
@@ -152,7 +155,11 @@ aside header {
 /* panel de chat */ 
 
 .chat-header {
-    background-color: var(--orange-200);
+    background: linear-gradient(
+    135deg,
+    var(--orange-500) 0%,
+    var(--orange-400) 40%,
+    var(--orange-300) 80%);
     border-bottom: 1px solid var(--orange-300);
     display: flex;
     padding: 10px;
@@ -166,7 +173,7 @@ aside header {
 }
 
 .chat-header p {
-  color: var(--blue-200);
+  color: var(--blue-300);
 }
 
 /* estilos de mensajes */
@@ -188,11 +195,12 @@ aside header {
 
 
 .message {
-  background-color: var(--orange-100);
+  background-color: var(--orange-200);
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.281);
   padding: 10px;
   width: 60%;
+  color: var(--blue-100);
 }
 
 .me {
@@ -212,7 +220,7 @@ aside header {
 
  footer {
     display: flex;
-    background-color: var(--green-100);
+    background-color: var(--orange-300);
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -239,7 +247,7 @@ aside header {
  }
 
  footer .btn-attach:hover {
-    color: var(--orange-200);
+    color: var(--blue-200);
  }
 
  footer form {
@@ -256,14 +264,14 @@ aside header {
     border: none;
  }
  footer textarea:focus {
-    outline: 1px solid var(--green-200);
+    outline: 1px solid var(--orange-500s);
     
  }
 
  footer .btn-send {
-    background-color: var(--orange-300);
+    background-color: var(--orange-400);
     border: none;
-    color: var(--orange-200);
+    color: var(--orange-100);
     border-radius: 30px;
     padding: 5px;
     cursor: pointer;
@@ -271,7 +279,7 @@ aside header {
 
  }
  footer .btn-send:hover {
-    background-color: var(--orange-400);
+    background-color: var(--blue-200);
     transform: scale(0.95);
  }
 
