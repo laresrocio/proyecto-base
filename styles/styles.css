@@ -114,3 +114,32 @@ aside header {
   color: #91dfd6;
   opacity: 1; 
 }
+
+/* chats styles*/
+
+.chats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.chat {
+    background-color: var(--blue-100);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.chat:hover {
+  background-color: var(--blue-300);
+  cursor: pointer;
+  border-left: 3px solid var(--orange-400);
+}
+
