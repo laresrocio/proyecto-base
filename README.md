@@ -24,3 +24,4 @@ index.html
 Durante el desarrollo del proyecto trabajé de forma progresiva, realizando **commits frecuentes y descriptivos** para registrar cada avance.
 Comencé con la estructura inicial y el HTML base, y luego fui agregando los estilos de las distintas secciones de la interfaz. A lo largo del proceso incorporé **variables de colores**, la **tipografía**, mejoras visuales, **diseño responsive** y **assets** como el ícono del proyecto.
 Esto me permitió mantener el código ordenado y llevar un control del progreso del trabajo.
+## 6. Creacion de archivo javascript para manipular el buscador de chats
