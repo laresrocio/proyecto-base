@@ -22,6 +22,10 @@ const searchChats = () => {
       $chat.style.display = "none"
     }
   }
+
+  //validar longitud de $chats
+  const lengthChats = $chats.length
+
 }
 
 $search.addEventListener("input", searchChats)
