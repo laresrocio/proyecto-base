@@ -38,7 +38,7 @@ const renderChats = () => {
   })
 }
 
-const searchChats = () => {
+const searchChats = (list) => {
   const $chats = document.querySelectorAll(".chat")
 
   //accedo al valor ingresado al input
@@ -87,4 +87,4 @@ const searchChats = () => {
 // }
 
 $search.addEventListener("input", searchChats)
-renderChats()
+renderChats(chatsData)
