@@ -40,7 +40,7 @@ body {
 /*aside styles*/
 
 aside {
-    background-color:var(--blue-300);
+    background-color: var(--blue-300);
     color: var(--orange-100);
 }
 
@@ -87,6 +87,7 @@ aside header {
     align-items: center;
 
 }
+
 .menu button svg {
     width: 25px;
     height: 25px;
@@ -119,8 +120,8 @@ aside header {
 }
 
 .search input::placeholder {
-  color: var(--blue-50);
-  opacity: 1; 
+    color: var(--blue-50);
+    opacity: 1;
 }
 
 /* menu de chats styles*/
@@ -146,20 +147,25 @@ aside header {
 }
 
 .chat:hover {
-  background-color: var(--blue-200);
-  cursor: pointer;
-  border-left: 3px solid var(--orange-400);
+    background-color: var(--blue-200);
+    cursor: pointer;
+    border-left: 3px solid var(--orange-400);
 }
 
+.empty {
+    text-align: center;
+    font-size: 14px;
+    color: var(--blue-50);
+    padding: 10px;
+}
 
-/* panel de chat */ 
+/* panel de chat */
 
 .chat-header {
-    background: linear-gradient(
-    135deg,
-    var(--orange-500) 0%,
-    var(--orange-400) 40%,
-    var(--orange-300) 80%);
+    background: linear-gradient(135deg,
+            var(--orange-500) 0%,
+            var(--orange-400) 40%,
+            var(--orange-300) 80%);
     border-bottom: 1px solid var(--orange-300);
     display: flex;
     padding: 10px;
@@ -167,108 +173,110 @@ aside header {
     gap: 10px;
     color: var(--blue-100)
 }
+
 .chat-header img {
-  width: 50px;
-  border-radius: 50%;
+    width: 50px;
+    border-radius: 50%;
 }
 
 .chat-header p {
-  color: var(--blue-300);
+    color: var(--blue-300);
 }
 
 /* estilos de mensajes */
 
 .chat-panel {
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
 }
 
 .messages {
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  overflow-y: auto;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
 }
 
 
 .message {
-  background-color: var(--orange-200);
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.281);
-  padding: 10px;
-  width: 60%;
-  color: var(--blue-100);
+    background-color: var(--orange-200);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.281);
+    padding: 10px;
+    width: 60%;
+    color: var(--blue-100);
 }
 
 .me {
-  align-self: end;
-  background-color: var(--orange-300);
+    align-self: end;
+    background-color: var(--orange-300);
 }
 
 .message .time {
-  color: var(--blue-200);
-  font-size: 14px;
-  margin-top: 10px;
-  text-align: end;
+    color: var(--blue-200);
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: end;
 }
 
 
 /*footer de ventana de chat*/
 
- footer {
+footer {
     display: flex;
     background-color: var(--orange-300);
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     gap: 10px;
- }
+}
 
- footer button {
+footer button {
     width: 45px;
     height: 30px;
     padding: 3px;
- }
+}
 
- footer svg {
+footer svg {
     width: 100%;
     height: 100%;
- }
+}
 
- footer .btn-attach {
+footer .btn-attach {
     background-color: transparent;
     border: none;
     cursor: pointer;
     color: var(--orange-100);
     transition: color .3;
- }
+}
 
- footer .btn-attach:hover {
+footer .btn-attach:hover {
     color: var(--blue-200);
- }
+}
 
- footer form {
+footer form {
     display: flex;
     align-items: center;
     flex: 1;
- }
+}
 
- footer textarea {
+footer textarea {
     padding: 5px;
     resize: none;
     border-radius: 15px;
     width: 100%;
     border: none;
- }
- footer textarea:focus {
-    outline: 1px solid var(--orange-500s);
-    
- }
+}
 
- footer .btn-send {
+footer textarea:focus {
+    outline: 1px solid var(--orange-500s);
+
+}
+
+footer .btn-send {
     background-color: var(--orange-400);
     border: none;
     color: var(--orange-100);
@@ -277,20 +285,22 @@ aside header {
     cursor: pointer;
     transition: all .2s;
 
- }
- footer .btn-send:hover {
+}
+
+footer .btn-send:hover {
     background-color: var(--blue-200);
     transform: scale(0.95);
- }
+}
 
 
- /*responsive design*/
+/*responsive design*/
 
- @media (max-width:880px){
+@media (max-width:880px) {
     .app {
         grid-template-columns: 1fr;
     }
+
     aside {
         display: none;
     }
- }
+}

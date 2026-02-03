@@ -25,6 +25,12 @@ const chatsData = [
 
 //funcion para renderizar chats
 const renderChats = (list) => {
+
+  if (list.length === 0) {
+    $listChats.innerHTML = `<div class="empty"><h3>No hay chats para mostrar</h3></div>`
+    return
+  }
+
   $listChats.innerHTML = ""
   list.forEach((chat) => {
     $listChats.innerHTML += `
