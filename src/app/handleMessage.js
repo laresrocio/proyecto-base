@@ -45,9 +45,20 @@ const renderMessages = (list) => {
 }
 
 const sendMessage = (event) => {
-  event.preventDefault()
-  console.log("enviando msj")
+  const now = new Date()
+  if (event.key === "Enter") {
+    const newMessage = {
+      text: $newMessage.value,
+      me: true,
+      time: now.getHours() + ":" + now.getMinutes()
+    }
+    console.log(newMessage)
+  }
 }
 
-$formMessage.addEventListener("submit", sendMessage)
+//$formMessage.addEventListener("submit", sendMessage)
+
+$newMessage.addEventListener("keydown", (e) => { sendMessage(e) })
+
+
 renderMessages(messages)
