@@ -1,4 +1,6 @@
 const $listMessages = document.getElementById("messages")
+const $newMessage = document.getElementById("new-message")
+const $formMessage = document.getElementById("form-message")
 
 //contenido de msjs
 const messages = [
@@ -42,5 +44,10 @@ const renderMessages = (list) => {
   )
 }
 
-renderMessages(messages)
+const sendMessage = (event) => {
+  event.preventDefault()
+  console.log("enviando msj")
+}
 
+$formMessage.addEventListener("submit", sendMessage)
+renderMessages(messages)
