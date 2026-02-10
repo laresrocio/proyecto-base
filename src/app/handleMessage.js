@@ -53,8 +53,13 @@ const sendMessage = (event) => {
       time: now.getHours() + ":" + now.getMinutes()
     }
     console.log(newMessage)
+    messages.push(newMessage)
+    renderMessages(messages)
   }
 }
+
+
+//investigar forma de enviar mensaje con enter y con boton send
 
 //$formMessage.addEventListener("submit", sendMessage)
 
