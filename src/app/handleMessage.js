@@ -30,6 +30,21 @@ const messages = [
   }
 ]
 
+const loadChats = () => {
+  const data = JSON.parse(localStorage.getItem("messages"))
+  if (data === null) {
+    return messages
+  }
+  return data
+}
+
+
+const saveChats = (listOfMessages) => {
+  localStorage.setItem("messages", JSON.stringify(listOfMessages))
+  console.log("Msj guardados")
+}
+
+
 const renderMessages = (list) => {
   $listMessages.innerHTML = " "
 
@@ -52,9 +67,14 @@ const sendMessage = (event) => {
       me: true,
       time: now.getHours() + ":" + now.getMinutes()
     }
-    console.log(newMessage)
+
+    //se agrega a la lista de mensajes y se renderiza 
     messages.push(newMessage)
+    saveChats(messages)
     renderMessages(messages)
+
+    //investigar salto de linea cuando resetea
+    $formMessage.reset()
   }
 }
 
@@ -65,5 +85,6 @@ const sendMessage = (event) => {
 
 $newMessage.addEventListener("keydown", (e) => { sendMessage(e) })
 
+const initialMessages = loadChats()
 
-renderMessages(messages)
+renderMessages(initialMessages)
